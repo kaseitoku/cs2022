@@ -767,3 +767,148 @@ Ok, one module loaded.
 [?1h=>>> :p[Kq
 [?1l>Leaving GHCi.
 ]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git add .
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git commit -m ""s"t"a"t"e"[1P" "[1@r[C[CA"l"g"o"[1Plgo"algo"
+[main 48d93b6] start algo
+ 3 files changed, 786 insertions(+), 1 deletion(-)
+ create mode 100644 src/TemplateAlgo.hs
+ create mode 100644 stack.yaml.lock
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git push
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 16.78 KiB | 8.39 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:kaseitoku/cs2022
+   8c0117f..48d93b6  main -> main
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ Script started on 2022-09-26 11:31:00+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="169" LINES="18"]
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ cat '[K`which lgchi`
+^C
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ cat `which lgchi`[1Pi`[1Pi`hi`ci`
+#!/bin/bash
+ginput | tee -a -i ghci.log | stack exec -- ghci 2>&1 | tee -a -i ghci.log
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ coo[Kde ~/.local/bih[Kn
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ lghci src/TemplateAlgo.hs
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/kyoka/cs2022/.ghci
+[1 of 1] Compiling TemplateAlgo     ( src/TemplateAlgo.hs, interpreted )
+Ok, one module loaded.
+2022-09-26 11:41:13.012272366
+[?1h=>>> this[K[K[K[Kwords ""T"h"i"s" "i"s" "a" "p"e"n"."
+[?1l>["This","is","a","pen."]
+2022-09-26 11:43:23.888589018
+[?1h=>>> :r
+[?1l>   1  module TemplateAlgo where
+   2  
+   3  main :: IO ()
+   4  main = interact func
+   5  
+   6  func :: String -> String
+   7  func input = case map (map readInt . words) (lines input) of
+   8      _ -> undefined
+   9  
+  10  readInt :: String -> Int
+  11  readInt = read
+Ok, one module loaded.
+2022-09-26 12:06:39.228097046
+[?1h=>>> :l app/Main.hs
+[?1l>   1    module Main where
+   2    
+   3    main :: IO ()
+   4    main = interact func
+   5    
+   6    func :: String -> String
+   7    func input = unlines(map show [1 .. 3])
+   8    
+   9    showInt :: Int -> String
+  10    showInt = show
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-09-26 12:07:21.852895339
+[?1h=>>> main
+[?1l>1
+2
+3
+2022-09-26 12:08:28.624320397
+[?1h=>>> 
+[?1l><stdin>: hGetChar: illegal operation (handle is semi-closed)
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ Script started on 2022-10-03 11:02:54+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="152" LINES="18"]
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ lghci src/TemplateAlgo.hs[8Pcode ~/.local/binat `which lghci`
+#!/bin/bash
+
+stack exec -- ghci $1]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ lghci app [K/Main.hs
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/kyoka/cs2022/.ghci
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-10-03 11:08:04.462695161
+[?1h=>>> main[4D:l app/Main.hs[13Dr[K[2Dwords "This is a pen."[22D:q[K[2Dwords "This is a pen."[22D:r[Kl app/Main.hs[14Dmain[K[4D[K2717[K82 <<[K[K7[K'[K`mod` 818
+[?1l>188
+2022-10-03 11:13:45.579497265
+[?1h=>>> ;[K:r
+[?1l>   1  module Main where
+   2  
+   3  showInt :: Int -> String
+   4  showInt = show
+   5  
+   6  readInt :: String -> Int
+   7  readInt = read
+   8  
+   9  main :: IO ()
+  10  main = interact func
+  11  
+  12  -- func :: String -> String
+  13  -- func input = unlines ["Hello Algo-method!"]
+  14  
+  15  -- func :: String -> String
+  16  -- func input = unlines(map showInt [1 .. 3])
+  17  
+  18  func :: String -> String
+  19  func input =  27182 `mod` 818
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+
+[;1mapp/Main.hs:19:15: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Num String) arising from the literal ‘27182’
+    • In the first argument of ‘mod’, namely ‘27182’
+      In the expression: 27182 `mod` 818
+      In an equation for ‘func’: func input = 27182 `mod` 818[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m19 |[0m[0m func input =  [;1m[31m27182[0m[0m `mod` 818
+[;1m[34m   |[0m[0m[;1m[31m               ^^^^^[0m[0m
+[0m[0m[0m
+[;1mapp/Main.hs:19:15: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Integral String) arising from a use of ‘mod’
+    • In the expression: 27182 `mod` 818
+      In an equation for ‘func’: func input = 27182 `mod` 818[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m19 |[0m[0m func input =  [;1m[31m27182 `mod` 818[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m               ^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-10-03 11:14:53.149608722
+[?1h=>>> :r
+[?1l>   1  module Main where
+   2  
+   3  showInt :: Int -> String
+   4  showInt = show
+   5  
+   6  readInt :: String -> Int
+   7  readInt = read
+   8  
+   9  main :: IO ()
+  10  main = interact func
+  11  
+  12  -- func :: String -> String
+  13  -- func input = unlines ["Hello Algo-method!"]
+  14  
+  15  -- func :: String -> String
+  16  -- func input = unlines(map showInt [1 .. 3])
+  17  
+  18  func :: String -> String
+  19  func input =  showInt (27182 `mod` 818)
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-10-03 11:18:30.621665505
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git add .
