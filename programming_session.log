@@ -912,3 +912,32 @@ Ok, one module loaded.
 [?1h=>>> :q
 [?1l>Leaving GHCi.
 ]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git add .
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git commit -m ""a"d"d" "u"p"t"o" "s"t"o"[1P"d"i"n"-"1"-"3"
+[main 9ae86e1] add upto stdin-1-3
+ 3 files changed, 180 insertions(+), 5 deletions(-)
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git pussh[K[Kh
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)Counting objects:  15% (2/13)Counting objects:  23% (3/13)Counting objects:  30% (4/13)Counting objects:  38% (5/13)Counting objects:  46% (6/13)Counting objects:  53% (7/13)Counting objects:  61% (8/13)Counting objects:  69% (9/13)Counting objects:  76% (10/13)Counting objects:  84% (11/13)Counting objects:  92% (12/13)Counting objects: 100% (13/13)Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 2.63 KiB | 899.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:kaseitoku/cs2022
+   48d93b6..9ae86e1  main -> main
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ Script started on 2022-10-17 10:54:27+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="152" LINES="18"]
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ git pushcommit -m "add upto stdin-1-3"add .[Klghci app/Main.hscat `which lghci`begin[Klghci src/TemplateAlgo.hsbegin[Klghci src/TemplateAlgo.hs[8Pcode ~/.local/binat `which lghci`chi`begin[Kgit pushcommit -m "start algo"add .[Kstack exec -- ghci src/TemplateAlgo.hsbuild[K
+[0mcs2022-0.1.0.0: unregistering (local file changes: app/Main.hs src/TemplateAlgo.hs)[0m
+[0mcs2022> build (lib + exe)[0m
+[0mPreprocessing library for cs2022-0.1.0.0..[0m
+[0mBuilding library for cs2022-0.1.0.0..[0m
+[0m[3 of 3] Compiling TemplateAlgo[0m
+[0mPreprocessing executable 'cs2022' for cs2022-0.1.0.0..[0m
+[0mBuilding executable 'cs2022' for cs2022-0.1.0.0..[0m
+[0m[2 of 2] Compiling Main[0m
+[0mLinking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/cs2022/cs2022 ...[0m
+[0mcs2022> copy/register[0m
+[0mInstalling library in /home/kyoka/cs2022/.stack-work/install/x86_64-linux-tinfo6/bb656a5ec7aeb552fba7adab5f8259c3abf2308911b81bdf84e6be1ac807c4de/8.10.7/lib/x86_64-linux-ghc-8.10.7/cs2022-0.1.0.0-BUCyn38qLb36zUXpKHew9j[0m
+[0mInstalling executable cs2022 in /home/kyoka/cs2022/.stack-work/install/x86_64-linux-tinfo6/bb656a5ec7aeb552fba7adab5f8259c3abf2308911b81bdf84e6be1ac807c4de/8.10.7/bin[0m
+[0mRegistering library for cs2022-0.1.0.0..[0m
+]0;kyoka@DESKTOP-J7N36AJ: ~/cs2022[01;32mkyoka@DESKTOP-J7N36AJ[00m:[01;34m~/cs2022[00m$ stack build[3Pgit pushcommit -m "add upto stdin-1-3"add .[K
